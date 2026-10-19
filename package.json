@@ -13,7 +13,7 @@
   "scripts": {
     "build": "npm run build --workspaces --if-present",
     "e2e": "npm run e2e --workspace=scripts",
-    "test": "npm test --workspaces --if-present && npm run check:adrs",
+    "test": "npm test --workspaces --if-present",
     "check:adrs": "node scripts/maintenance/check-adrs.mjs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -24,7 +24,8 @@
     "check:stellar-sdk": "node scripts/maintenance/check-stellar-sdk-version.mjs",
     "check:secrets": "node scripts/maintenance/check-secrets.mjs",
     "check:test-counts": "node scripts/maintenance/check-test-counts.mjs",
-    "clean": "node scripts/maintenance/clean.mjs"
+    "clean": "node scripts/maintenance/clean.mjs",
+    "check": "npm run check:adrs && npm run check:secrets && npm run check:test-counts && npm run check:stellar-sdk"
   },
   "devDependencies": {
     "@sharibo/client": "*",
