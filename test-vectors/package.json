@@ -7,6 +7,6 @@
     "generate": "node --experimental-vm-modules generate.mjs > poseidon.json"
   },
   "dependencies": {
-    "poseidon-bls12381": "^1.0.0"
+    "poseidon-bls12381": "1.0.2"
   }
 }
