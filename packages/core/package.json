@@ -38,9 +38,10 @@
     "poseidon-bls12381": "1.0.2"
   },
   "devDependencies": {
-    "@stellar/stellar-sdk": "^16.2.0",
+    "@stellar/stellar-sdk": "^17.2.0",
     "@types/node": "26.6.3",
-    "typescript": "6.0.3",
-    "vitest": "^2.1.8"
+    "fast-check": "4.10.2",
+    "typescript": "7.0.2",
+    "vitest": "^5.0.2"
   }
 }
